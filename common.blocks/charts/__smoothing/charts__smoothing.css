@@ -1,0 +1,17 @@
+.charts__smoothing {
+    display: flex;
+    align-items: baseline;
+}
+
+.charts__smoothing .input {
+    width: 40px;
+}
+
+.charts__smoothing .input,
+.charts__smoothing .button {
+    margin-left: 5px;
+}
+
+.charts__smoothing .input__control {
+    text-align: center;
+}

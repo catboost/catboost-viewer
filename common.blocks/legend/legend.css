@@ -1,0 +1,139 @@
+.legend {
+    font-size: 13px;
+    line-height: 22px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.legend .icon {
+    width: 10px;
+    height: 10px;
+}
+
+.legend .checkbox {
+    margin-right: 13px;
+}
+
+.legend__learn-test {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.legend__learn,
+.legend__test {
+    flex-basis: 33%;
+    white-space: nowrap;
+}
+
+.legend__learn {
+    padding-right: 15px;
+}
+
+.legend__trains {
+    overflow: scroll;
+    margin-bottom: 15px;
+}
+
+.legend__train {
+    margin-bottom: 15px;
+}
+
+.legend__train_hidden {
+    display: none;
+}
+
+.legend__values {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.legend__learn-value,
+.legend__test-value,
+.legend__time-spend-value,
+.legend__time-left-value,
+.legend__best-value {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.legend__learn-value,
+.legend__test-value {
+    width: 7.7em;
+}
+
+.legend__learn-value_hidden,
+.legend__test-value_hidden,
+.legend__time-spend-value_hidden,
+.legend__time-left-value_hidden,
+.legend__best-value_hidden {
+    visibility: hidden;
+}
+
+.legend__time-left-value_hidden {
+    display: none;
+}
+
+.legend__train_color_0 {
+    color: #8fd541;
+}
+
+.legend__train_color_0 .icon svg {
+    fill: #8fd541;
+}
+
+.legend__train_color_1 {
+    color: #9e64a9;
+}
+
+.legend__train_color_1 .icon svg {
+    fill: #9e64a9;
+}
+
+.legend__train_color_2 {
+    color: #72c3e0;
+}
+
+.legend__train_color_2 .icon svg {
+    fill: #72c3e0;
+}
+
+.legend__train_color_3 {
+    color: #fe8c00;
+}
+
+.legend__train_color_3 .icon svg {
+    fill: #fe8c00;
+}
+
+.legend__train_color_4 {
+    color: #5bcd9d;
+}
+
+.legend__train_color_4 .icon svg {
+    fill: #5bcd9d;
+}
+
+.legend__train_color_5 {
+    color: #7f7f7f;
+}
+
+.legend__train_color_5 .icon svg {
+    fill: #7f7f7f;
+}
+
+.legend__train_color_6 {
+    color: #fc6767;
+}
+
+.legend__train_color_6 .icon svg {
+    fill: #fc6767;
+}
+
+.legend__train_color_7 {
+    color: #6d64a9;
+}
+
+.legend__train_color_7 .icon svg {
+    fill: #6d64a9;
+}

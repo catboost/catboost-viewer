@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+.idea
+.project
+.svn
+npm-debug.log
+
+static/index.min.*
+
+tests/tmp
+
+# bem
+.enb/tmp/
+*bundles*/*/*.*
+!*bundles*/*/*.bemdecl.js
+*bundles*/*/*.tmpl.bemdecl.js
+!*bundles*/.bem/*

@@ -1,0 +1,12 @@
+.sideblock {
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.sideblock_position_left {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    border-right: #eee solid 1px;
+}

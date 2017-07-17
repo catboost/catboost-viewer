@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+
+var fs = require('fs'),
+    path = require('path');
+
+require('coa').Cmd()
+    .name('catboost-viewer')
+    .title('CatBoost Viewer')
+    .helpful()
+    .opt()
+        .name('version').title('Version').short('v').long('version')
+        .flag().only()
+        .act(function(opts) {
+            return JSON.parse(String(fs.readFileSync(path.join(__dirname, '..', 'package.json'))))
+                .version;
+        })
+        .end()
+    .opt()
+        .name('port').title('Port').short('p').long('port')
+        .def(3000)
+        .val(function(v) {
+            return process.env.PORT = v;
+        })
+        .end()
+    .arg()
+        .name('dir').title('CatBoost logs directory')
+        .req()
+        .val(function(v) {
+            if(!fs.existsSync(v)) return this.reject('Path "' + v + '" does not exist');
+            if(!fs.statSync(v).isDirectory()) return this.reject('Path "' + v + '" is not directory');
+            return process.env.CATBOOST_DIR = v;
+        })
+        .end()
+    .act(function(opts, args) {
+        return require('../server');
+    })
+    .run();

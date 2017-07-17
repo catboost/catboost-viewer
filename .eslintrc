@@ -1,0 +1,68 @@
+{
+    "extends" : ["pedant"],
+    "plugins" : [
+        "bem-xjst"
+    ],
+    "parserOptions" : {
+        "ecmaVersion" : 6,
+        "sourceType" : "module"
+    },
+    "env" : {
+      "browser" : true,
+      "node": true,
+      "es6": true,
+      "bem-xjst/bemhtml": true,
+      "bem-xjst/bemtree": true
+    },
+    "globals" : {
+      "modules" : false,
+      "io" : false,
+      "Highcharts" : false,
+      "Plotly" : false
+    },
+    "rules" : {
+        "semi" : "error",
+        "indent" : ["error", 4, {
+            "FunctionDeclaration": { "body": 1, "parameters": 1 },
+            "FunctionExpression": { "body": 1, "parameters": 1 }
+        }],
+        "no-shadow" : "off",
+        "no-cond-assign" : "off",
+        "no-unused-expressions" : "off",
+        "no-return-assign" : "off",
+        "no-mixed-spaces-and-tabs" : "error",
+        "max-len" : ["error", { "code" : 120 }],
+        "eol-last" : "error",
+        "no-unused-vars" : ["error", {
+            "vars" : "all",
+            "args" : "none"
+        }],
+        "curly" : ["error", "multi"],
+        "key-spacing" : ["error", {
+            "beforeColon" : true,
+            "afterColon" : true,
+            "mode" : "strict"
+        }],
+        "object-curly-spacing" : ["error", "always"],
+        "keyword-spacing" : ["error", {
+            "before" : true,
+            "after" : true,
+            "overrides" : {
+                "if" : { "after" : false },
+                "for" : { "after" : false },
+                "while" : { "after" : false },
+                "switch" : { "after" : false },
+                "catch" : { "after" : false }
+            }
+        }],
+        "array-bracket-spacing" : ["error", "never"],
+        "func-call-spacing" : "error",
+        "space-before-blocks" : ["error", "always"],
+        "quotes" : ["error", "single", { "avoidEscape" : true }],
+        "camelcase" : ["error", { "properties" : "never" }],
+        "no-trailing-spaces" : "error",
+        "comma-dangle" : ["error", "never"],
+    }
+}
+
+
